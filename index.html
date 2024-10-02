@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">NewsNation</a>
+            <a href="https://www.instagram.com/whyrajan" target="_blank" class="navbar-author">RAJAN</a>
+        </div>
+    </nav>
+
+    <div class="hero-search" id="hero-search">
+        <div class="matrix-background"></div>
+        <div class="search-container">
+            <h1>Search latest news</h1>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-input" placeholder="Search News/Articles">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="results-container"></div>
+
+
+
+    <script src="main.js"></script>
+    
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+       
+        </div>
+        <button class="nav-btn prev" onclick="navigateArticle(-1)">&#10094;</button>
+        <button class="nav-btn next" onclick="navigateArticle(1)">&#10095;</button>
+    </div>
+</body>
+</html>
